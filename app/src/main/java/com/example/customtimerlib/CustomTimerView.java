@@ -24,6 +24,7 @@ public class CustomTimerView extends AppCompatTextView
     public CustomTimerView(Context context) {
         this(context, null);
         setFont(context);
+
     }
 
     public CustomTimerView(Context context, AttributeSet attrs) {
@@ -35,7 +36,7 @@ public class CustomTimerView extends AppCompatTextView
         super(context, attrs, defStyleAttr);
         setFont(context);
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.TimerView, defStyleAttr, 0);
-        System.out.println("message >>>");
+        System.out.println("message 1 >>>");
 
         try {
             expiryMessage = a.getString(R.styleable.TimerView_expiry_message);
